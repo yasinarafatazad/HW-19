@@ -423,7 +423,7 @@ a{
 .mobile-bottom-text-wrapper i{
     height: 25px;
     width: 25px;
-    line-height: 25px;
+    line-height: 28px;
     color: #f5f2ee;
     background: #c7b299;
     border-radius: 50%;
@@ -581,6 +581,7 @@ a{
     text-align: center;
     border: 1px solid #d1d1d1;
     border-radius: 50%;
+    line-height: 22px;
     height: 22px;
     width: 22px;
     transition: all linear 0.3s;
@@ -640,6 +641,7 @@ a{
     height: 490px;
 }
 /* Footer */
+/* Footer Top */
 #footer{}
 .footer-top{
     background: #191919;
@@ -763,50 +765,67 @@ a{
 .twitter-item:last-child:after {
     opacity: 0;
 }
-
-
-
-
 .footer-item:last-child{
     width: 280px;
 }
+/* Footer bottom */
 .footer-bottom{
     background: #101010;
-    line-height: 100px;
+    line-height: 110px;
     height: 110px;
-    color: yellow
+}
+.importatn-links{
+    display: flex;
+}
+.importatn-links p{
+    color: #555;
+}
+.importatn-links p span{
+    color: #959595;
+}
+.importatn-links a{
+    color: #555;
+    padding: 0 12px;
+    position: relative;
+    transition: all 0.5s;
+}
+.importatn-links a:before{
+    content: '';
+    height: 12px;
+    width: 0.5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #252525;
+}
+.importatn-links a:hover{
+    color: #c7b299
 }
 .footer-bottom-wrapper{
     display: flex;
     justify-content: space-between;
 }
-.importatn-links,.credits{
+.credits{
     display: flex;
+    color: #555;
 }
-.importatn-links p:first-child{
-    /* margin-right: 20px; */
+.credits p{
+    padding: 0 12px;
+}
+.credits p:last-child{
     position: relative;
 }
-.credits p, .importatn-links p{
-    /* margin: 0 10px; */
-}
-/* .importatn-links a:nth-child(2){
-    padding-left: 0;
-    border: 0;
-} */
-.importatn-links a, .credits p:first-child{
-    /* padding: 0; */
-    margin: 0 10px;
-    background: red;
-}
-
-.importatn-links a:after {
-    content: "";
+.credits p:last-child:before {
+    content: '';
+    height: 12px;
+    width: 0.5px;
     position: absolute;
     top: 50%;
     left: 0;
-    height: 14px;
-    width: 1px;
-    background: #fff;
-    transform: translateY(20px, 50%);
+    transform: translateY(-50%);
+    background: #252525;
+}
+.credits p span{
+    color: #959595;
 }
